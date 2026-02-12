@@ -1,0 +1,38 @@
+{
+  "name": "@suseejs/plugin-banner-text",
+  "version": "0.1.0",
+  "description": "Susee plugin for banner text",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/suseejs/plugin-banner-text.git"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Pho Thin Mg",
+    "email": "phothinmg@disroot.org",
+    "url": "https://phothinmg.github.io/"
+  },
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/suseejs/plugin-banner-text/issues"
+  },
+  "homepage": "https://github.com/suseejs/plugin-banner-text#readme",
+  "devDependencies": {
+    "@suseejs/types": "^0.1.6",
+    "typescript": "^5.9.3"
+  },
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md",
+    "package.json"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
+}
