@@ -37,7 +37,7 @@
   },
   "homepage": "https://github.com/suseejs/plugin-banner-text#readme",
   "devDependencies": {
-    "@suseejs/types": "^0.1.6",
+    "@suseejs/types": "^0.1.8",
     "typescript": "^5.9.3"
   },
   "files": [
