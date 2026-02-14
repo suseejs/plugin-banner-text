@@ -1,8 +1,12 @@
 import type SuseeTypes = require("@suseejs/types");
 
-const suseeBannerText: SuseeTypes.SuseePluginFunction = (
-  bannerText: string,
-): SuseeTypes.SuseePlugin => {
+/**
+ * Susee plugin for banner text.
+ *
+ * @param {string} bannerText - The banner text to be added to the top of the generated CSS.
+ * @returns {SuseeTypes.SuseePlugin} - The Susee plugin.
+ */
+function suseeBannerText(bannerText: string): SuseeTypes.SuseePlugin {
   return {
     type: "post-process",
     async: false,
@@ -10,6 +14,6 @@ const suseeBannerText: SuseeTypes.SuseePluginFunction = (
       return `${bannerText}\n\n${code}`;
     },
   };
-};
+}
 
 export = suseeBannerText;
