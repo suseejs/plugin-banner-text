@@ -1,16 +1,15 @@
 import type * as SuseeTypes from "@suseejs/types";
 
-function suseeBannerText(bannerText: string): SuseeTypes.SuseePlugin {
+const suseeBannerText: SuseeTypes.SuseePluginFunction = (
+  bannerText: string,
+): SuseeTypes.SuseePlugin => {
   return {
     type: "post-process",
     async: false,
-    func: (code, file) => {
-      if (file?.match(/.js/g)) {
-        code = `${bannerText}\n\n${code}`;
-      }
-      return code;
+    func: (code, _file) => {
+      return `${bannerText}\n\n${code}`;
     },
   };
-}
+};
 
 export default suseeBannerText;
