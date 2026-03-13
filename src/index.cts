@@ -10,6 +10,7 @@ function suseeBannerText(bannerText: string): SuseeTypes.SuseePlugin {
   return {
     type: "post-process",
     async: false,
+    name: "@suseejs/plugin-banner-text",
     func: (code, _file) => {
       return `${bannerText}\n\n${code}`;
     },
